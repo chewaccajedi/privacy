@@ -1,0 +1,76 @@
+Anonymous Internet Navigation - Tor
+-----------------------------------
+
+The first step towards preserving your privacy is being able to interact with the Internet
+without being tracked or profiled, so that you can keep your interests, preferences and
+relationships away from uninvited eyes and ears.
+
+This is absolutely impossible if you use the standard software in your PC. The standard
+software are purposely designed to track each and every move you do, every click and every pause.
+They also track what you download and even where you spent more and lesser time.
+They track your physical location and who is the user or person who is logged in.
+
+With all these data, the observers create a very detailed profile of you, which is later sold
+for profit to commercial and political actors who will use it to sell you goods and services
+or influence your thoughts, opinions and votes.
+
+If you were actually being chased, you'd need only to connect to your email to instantly
+reveal your location and potentially put yourself under tremendous risk.
+
+Since the begining of the Internet people have been concerned about this issue, bearing in mind
+that many people in the world are human rights activists, victims of abusive regimes,
+military and intelligence personel, jornalist operating in hostile environments, etc., so since
+the early 2000's, independent, military and governments started to collaborate to find a way to
+protect these people.
+
+The solution is called Tor (The Onion Router), which basically is about sending your packets of
+data encrypted multiple times through a series of random nodes across the world, which none of
+them knows where you really are (except the 1st one) or which server you are communicating to
+(except the last one). All the information is encrypted using the keys of the intermediate
+servers or nodes, so each of these nodes only has the necessary information to pass the
+encrypted packet to the next node, but it cannot decypher the content of the packet.
+
+These nodes are located in different countries, making very difficult for any actor to be
+able to compromise enough number of nodes so that he can have access to full 'circuit'.
+
+So the system works in a way that when Joe wants to communicate with the server X, his message is
+encrypted and send to server A, then to server B, and then to server C, being the latter the one
+which actually communicates with server X. For someong inspecting the data coming to server X, it
+will look as if the connection is coming from server C, and won't be able to know where Joe is
+actually located, because this information is only available to server A.
+
+All the information in the Tor nerwork is encrypted, so it is not possible so it is not possible
+to read the data either.
+
+Finally, if there were only a couple of users of Tor, it would be easier to figure out or guess
+who isconnecting with who, but there are hundreds of thousands of people in the world using Tor all
+the time, and we can observe that someone is connecting to the server X, but it won't be easier
+to know which of the users is the one using this connection.
+
+We have achieved the anonymous Internet.
+
+It is more complex than this, and there are ways to trick you to reveal your actual location (ie.
+by downloading a file which will in turn download a picture from some other server through a
+connection that goes directly to the server without passing through the Tor network), so you
+must ensure that any data connection is routed through Tor.
+
+Making sure that everything in your PC is routed through Tor is not a trivial task, because your
+normal PC has been purposely designed to track you, but fortunately some people has sorted out
+this for you and created 'Tails', a fully operation operating system and software collection that
+has been pre-configured for working with Tor, and it can be run from a USB flash memory or 'thumb
+drive', so you only need to plug this thumb drive into any PC and boot it from the thumb drive
+and you will get a fully functional anonymous session with all the basic tools you need.
+
+You can find 'Tails' and its documentation at: https://tails.boum.org/
+
+With 'Tails' and Tor you would be able to achieve 2 important goals:
+
+a) If you don't login to any website or service, and observer of the traffic will not be able to
+   tell who you are or where on the world you are located. They will know someone is using Tor
+   but they won't be able to identify you among the hundreds of thousands of people using Tor
+   worldwide.
+
+b) If you login to any website of service, they will be able to identify you as the one behind
+   the connection, but they won't be able to know where in the world you are located, because
+   the will see only the connection coming out of the last node, which could be half the world
+   appart from where you really are.

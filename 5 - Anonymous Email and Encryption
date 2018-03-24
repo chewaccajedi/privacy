@@ -1,0 +1,34 @@
+Anonymous Email and Encryption
+------------------------------
+
+With Tail and the Tor network we are able to safely navigate the Internet (and even the 'Deep Web' or 'Dark Net',
+but we cannot do much, because as soon as we identify ourselves with any service (Google, Yahoo or even any forum
+where you may be registered), you would have instantly revealed your identity and everything you do from that
+point will still be logged and profiled.
+
+The next step is to forge one or multiple alternative identities that you would use to interact with portals and
+other people in the Internet, without ever revealing who you really are or where you actually are.
+
+The cornerstone of these identities is to have an 'anonymous email', an email account which is not tied up to your
+name, your ID, your telephone number nor another of your email addresses. A totally new and clean email address
+with no strings attached.
+
+This is not that simple, because Gmail, Yahoo, Hotmail and any major email provider will ask you at least for a
+verified telephone number, and if you are in a place where 'burner phones' are not available you will have no way
+to fullfil with this requirement.
+
+Fortunately, there are still a few services that can provide you with 'anonymous email', we have successfully
+tested:
+
+http://en.onionmail.info/ (this is the clearne explanatory website, to set up an account you will need to
+                           connect to any of their .onion servers)
+
+https://cock.li/
+
+You must use your Tails session to create these accounts and every time you use them. You must never access these
+accounts using 'normal' software as you will be instantly compromising your privacy.
+
+Once equiped with anonymous email, you can create accounts in forums or communicate with people without revealing
+your actual name or location. Now you truly are anonymous in the Internet.
+
+
