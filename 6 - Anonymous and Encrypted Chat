@@ -3,27 +3,27 @@ Anonymous and Encrypted Chat
 
 While having the possibility of navigating the Internet and sending and receiving emails
 privately is already very useful, there will be some times in which you need to have a
-live conversation with someone, while still stay private and anonymous.
+live conversation with someone, while still remain private and anonymous.
 
 Using the phone is not an option. Using End-to-end encrypted chat is the best option.
 
 You can technically use any type of message, as long as you manually encrypt each message
-for the correspoding recipient. In practice you could even post the encrypted messages y any
+for the correspoding recipient. In practice you could even post the encrypted messages in any
 public blog and get your replies in exactly the same way. As long as you both encrypt every
 message and interact with the service using Tor, you will be visible to everybody, but
 the others won't be able to know where you both are or what you are chatting about.
 
-An easier to use option comes along with your 'Tails' operating system and applications.
+An easier-to-use option comes along with the 'Tails' operating system and applications.
 It is called 'Pidgin Internet Messaging' and it provides end-to-end encryption for each
 of you messages, without you having to manually encrypt each of them. You will just
 chat with your buddy as in any other messaging system.
 
 There are many messaging systems which claim that they also provide end-to-end encryption,
 but their programming code is closed (meaning secret or sealed), so we cannot trust them
-because we have no way to verify whether they are really doing what they say. Conversely,
+because we have no way to verify whether they are really doing as they say. Conversely,
 'Pidgin' is an open source application, meaning that anyone can audit each line of
 programming code that is used to provide the service, allowing independent people to
-spot any 'back door' or vulnerability of the system.
+spot any 'back door' or vulnerability in the system.
 
 Every time you re-start 'Tails' it will randomly create a username with a disposable
 encryption key for you to use. If you wish to have a persistent username across multiple
