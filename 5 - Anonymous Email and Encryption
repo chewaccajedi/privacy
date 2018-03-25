@@ -21,9 +21,12 @@ Fortunately, there are still a few services that can provide you with 'anonymous
 tested:
 
 http://en.onionmail.info/ (this is the clearnet explanatory website, to set up an account you will need to
-                           connect to any of their .onion servers using Tor)
+                           connect to any of their .onion servers using Tor).
 
 https://cock.li/          (a vulgarly named service, but it works for the purpose of being anonymous).
+
+https://send-email.org/   (one-way email service, so you can send an email to anyone, but they cannot reply to
+                           you).
 
 You MUST use your Tails session to create these accounts and every time you use them. You must never access these
 accounts using 'normal' software as you will instantly compromise your privacy.
