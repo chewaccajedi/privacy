@@ -1,34 +1,109 @@
 Anonymous Email and Encryption
 ------------------------------
 
-With Tail and the Tor network we are able to safely navigate the Internet (and even the 'Deep Web' or 'Dark Net',
+With Tail and the Tor network we are able to safely navigate the Internet (and even the 'Deep Web' or 'Dark Net'),
 but we cannot do much, because as soon as we identify ourselves with any service (Google, Yahoo or even any forum
 where you may be registered), you would have instantly revealed your identity and everything you do from that
 point will still be logged and profiled.
 
 The next step is to forge one or multiple alternative identities that you would use to interact with portals and
-other people in the Internet, without ever revealing who you really are or where you actually are.
+other people in the Internet, without ever revealing who you really are or where you are actually located.
 
 The cornerstone of these identities is to have an 'anonymous email', an email account which is not tied up to your
-name, your ID, your telephone number nor another of your email addresses. A totally new and clean email address
+name, your ID, your telephone number or your public email address. A totally new and clean email address
 with no strings attached.
 
-This is not that simple, because Gmail, Yahoo, Hotmail and any major email provider will ask you at least for a
+This is not that simple, because Gmail, Yahoo, Hotmail and any major email provider will (at least) ask you for a
 verified telephone number, and if you are in a place where 'burner phones' are not available you will have no way
-to fullfil with this requirement.
+to fullfil with this requirement without giving away your identity.
 
 Fortunately, there are still a few services that can provide you with 'anonymous email', we have successfully
 tested:
 
-http://en.onionmail.info/ (this is the clearne explanatory website, to set up an account you will need to
-                           connect to any of their .onion servers)
+http://en.onionmail.info/ (this is the clearnet explanatory website, to set up an account you will need to
+                           connect to any of their .onion servers using Tor)
 
-https://cock.li/
+https://cock.li/          (a vulgarly named service, but it works for the purpose of being anonymous).
 
-You must use your Tails session to create these accounts and every time you use them. You must never access these
-accounts using 'normal' software as you will be instantly compromising your privacy.
+You MUST use your Tails session to create these accounts and every time you use them. You must never access these
+accounts using 'normal' software as you will instantly compromise your privacy.
 
 Once equiped with anonymous email, you can create accounts in forums or communicate with people without revealing
 your actual name or location. Now you truly are anonymous in the Internet.
 
 
+Encryption
+----------
+
+All the previous steps are providing us with the benefit of being anonymous, so we cannot be identified
+among thousands of people who are also using the internet anonymously, but our messages can still be read
+by anyone who gained access to the servers where these services are running, because in those servers
+the messages are stored in 'plain text'.
+
+The next step in our quest is to make sure that only the poeple for whom these messages are intended are
+the only ones who are able to read them. For this purpose we use 'encryption'.
+
+Encryption is a way of using mathematics to dis-arrange a message in a way that it looks like a bunch of
+gibberish text. Anybody with access to the message will be able to tell that message goes from Mr. A to Ms. B,
+(who should be 2 anonymous emails), but won't be able to decypher the message, because only Ms. B has the
+'private key' that allows you to convert the message back to plain text.
+
+Prior to sending the message, Mr. A had 'encrypted' the message using Ms. B's 'public key', which allows to
+encrypt a message for Ms. B, but does not allow to decypher it. This is called 'asimetric keys cryptography'
+and you can read about it in the internet, but it provide us with a very useful tool, because by giving
+the 'public key' to people, anybody can encrypt a message directed to you, but only you can read the message
+because you keep the 'private key' secret.
+
+We can also use your 'private keys' to 'sign' messages and documents so that the other part (who has your
+'public key') could verify that the message really comes from you and it has not been altered on the way.
+
+By exchanging the 'public keys' with the people you need to communicate with, you would be able to keep
+your communications private.
+
+Of course, this poses a new challenge: How to safely exchange the keys with the other people?
+
+Exchanging the keys is of utmost importance, because if instead of using the public key of a person you use
+the public key of his/her enemy, you will be encrypting the message for the enemy to read. The enemy will
+then read the message and re-encrypt using the correct key of the person and send it again, so that
+he/she would never know that the message was tampered. This is called 'man-in-the-middle attack'.
+
+If you are not able to exchange the public keys in person by physically pass a thumb drive with the file
+to the other person (which would be ideal and possible if you all know each other in person), you will
+publish your public key in a server, available for the entire world to see and find out. This is not a
+risk, because as long as you are the only person who has the secret private key, the only thing that
+can be done with the public key is encrypting messages for you to decypher, and verify if something
+has been 'signed' using your private key. So using these servers is the preferred option.
+
+The key-servers do not (and cannot) verify that the key that has been uploaded truely belongs to the
+email address associated to it, so anybody can upload any key pointing to any email address, so the first
+person who does it actually 'locks' the server for that particular email address, so it is a good practice
+to upload your public key to a server so that no man-in-the-middle could do it before you and could trick
+other people to use the wrong key. These servers have a protocol to syncronize among themselves, so once
+you have uploaded the key to one of them, the key will propagate to the others.
+
+From time to time, you may choose to change these keys, just in case they might have been compromised
+in any way.
+
+These all look complicated, but fortunately 'Tails' has all these functionalities already installed and
+configured to be used with the Tor network. From within 'Tails' you will be able to create your pair of
+public and private keys and upload the 'public key' to a server for other people to use.
+
+'Talis' also allows you to create an encrypted folder inside the very same 'Tails' thumb drive where you
+can 'persistently' keep your configurations, keys and any other information that may be critical or
+important for you.
+
+You can find 'Tails' and its documentation at: https://tails.boum.org/
+
+With all of the above you would have finally accomplished anonymous and private communications to anyone
+in the world.
+
+WARINING: THERE IS NO PERFECT SYSTEM OR IMPLEMENTATION OF IT, SO EVERY PIECE OF SOFTWARE, HARDWARE OR
+          PROTOCOL HAS ITS OWN VULNERABILITIES, SO BE MINDFUL AND USE ALL THESE WITH CARE TO REASONABLY
+          PROTECT YOURSELF AND THE PEOPLE YOU CARE FOR, BUT BE FULLY AWARE THAT SOME ACTORS, AND
+          PARTICULARLY THE VERY POWERFUL ONES, MAY STILL BE ABLE TO TAP INTO YOUR COMMUNICATIONS.
+          SOMEONE EXPLOITING VULNERABILITIES THAT WE MAY NOT BE AWARE OF, OR HAVING UNLIMITED RESOURCES
+          TO HACK INTO MANY SERVERS ACROSS MANY GEOGRAPHYS WILL BE VERY DIFFICULT TO DEFEAT, HOWEVER
+          IF YOU HAVE BEEN DISCIPLINED TO SEGREGATE YOUR IDENTITIES, AND NEVER GIVE INFORMATION
+          (NOT EVEN ENCRYPTED) THAT COULD TELL WHO YOU REALLY ARE OR WHERE YOU ARE LOCATED OR WHICH
+          OTHER IDENTITIES ARE YOURS, WE BELIEVE THAT EVEN THIS POWERFUL ACTOR WILL END UP WITH ONLY
+          BITS AND PIECES OF 'YOU' AFTER A GREAT DEAL OF EFFORT.
