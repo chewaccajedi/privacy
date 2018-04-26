@@ -55,7 +55,7 @@ must ensure that any data connection is routed through Tor.
 
 Making sure that everything in your PC is routed through Tor is not a trivial task, because your
 normal PC has been engineered by designed to track you, but fortunately some people have sorted out
-this for us and created 'Tails', a fully operation operating system and software collection that
+this for us and created 'Tails', a fully operational operating system and software collection that
 has been pre-configured to work with Tor, and it can be run from a USB flash memory or 'thumb
 drive', so you only need to plug this thumb drive into any PC and boot it from the thumb drive
 and you will get a fully functional anonymous session with all the basic tools you need.
@@ -64,7 +64,7 @@ You can find 'Tails' and its documentation at: https://tails.boum.org/
 
 With 'Tails' and Tor you would be able to achieve 2 important goals:
 
-a) If you don't login to any website or service, and observer of the traffic will not be able to
+a) If you don't login to any website or service, an observer of the traffic will not be able to
    tell who you are or where on the world you are located. They will know someone is using Tor
    but they won't be able to identify you among the hundreds of thousands of people using Tor
    worldwide.
