@@ -1,5 +1,5 @@
 # privacy
-Notes and links about how to be private in the Internet
+Notes and links about how to stay private in the Internet
 -------------------------------------------------------
 The internet has become a very dangerous place, plagued
 with crime, abuse, fake news, deception and many more.
