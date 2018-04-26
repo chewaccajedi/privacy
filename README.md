@@ -35,5 +35,5 @@ repository to your PC.
 
 If you wish to contribute with this project, kindly contact
 the administration, but be prepared to act in complete
-anonymity. You will never meet, see, speak or know the name
-of any of us, and we won't expect to know yours.
+anonymity. You will never meet, see, speak or know the real name
+of any of us, and we won't expect to know yours either.
