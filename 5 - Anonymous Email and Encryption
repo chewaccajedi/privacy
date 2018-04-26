@@ -98,7 +98,7 @@ all these keys and passwords.
 'Tails' also allows you to create an encrypted folder inside the very same 'Tails' thumb drive where you
 can 'persistently' keep your configurations, keys and any other information that may be critical or
 important for you. As this folder is encrypted, there is no big risk in getting it lost, except for
-the loss of data, or course, so you will need to recreate everything again.
+the loss of data, of course, so you will need to recreate everything again.
 
 You can find 'Tails' and its documentation at: https://tails.boum.org/
 
