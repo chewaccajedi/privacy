@@ -21,12 +21,21 @@ Fortunately, there are still a few services that can provide you with 'anonymous
 tested the following:
 
 http://en.onionmail.info/ (this is the clearnet explanatory website, to set up an account you will need to
-                           connect to any of their .onion servers using Tor).
+                           connect to any of their .onion servers using Tor
+			   Update 2018-04-28 - The clearnet interface is not working, the system can be use
+                                               to send emails within the .onion network only).
 
 https://cock.li/          (a vulgarly named service, but it works for the purpose of being anonymous).
 
 https://send-email.org/   (one-way email service, so you can send an email to anyone, but they cannot reply to
-                           you).
+                           you)
+                           Update 2018-04-28 - The system is down or at least is blocked by all the mayor email
+                                               providers, thus it cannot be used).
+
+https://tutanota.com/     (this service will allow you to register an account without providing any information,
+                           name, email or telephone number, but you will need to access the service via the web.
+                           we suggest you manually encrypt with PGP any email sent through this system, and access
+                           the website via Tor)
 
 You MUST use your Tails session to create these accounts and every time you use them. You must never access these
 accounts using 'normal' software as you will instantly compromise your privacy.
