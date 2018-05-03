@@ -21,9 +21,7 @@ Fortunately, there are still a few services that can provide you with 'anonymous
 tested the following:
 
 http://en.onionmail.info/ (this is the clearnet explanatory website, to set up an account you will need to
-                           connect to any of their .onion servers using Tor
-			   Update 2018-04-28 - The clearnet interface is not working, the system can be use
-                                               to send emails within the .onion network only).
+                           connect to any of their .onion servers using Tor).
 
 https://cock.li/          (a vulgarly named service, but it works for the purpose of being anonymous).
 
