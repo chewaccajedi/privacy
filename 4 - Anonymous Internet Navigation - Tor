@@ -51,7 +51,7 @@ We have achieved the anonymous Internet.
 It is more complex than this, and there are ways to trick you to reveal your actual location (ie.
 by downloading a file which will in turn download a picture from some other server through a
 connection that goes directly to the server without passing through the Tor network), so you
-must ensure that any data connection is routed through Tor.
+must ensure that all data connections are routed through Tor.
 
 Making sure that everything in your PC is routed through Tor is not a trivial task, because your
 normal PC has been engineered by designed to track you, but fortunately some people have sorted out
