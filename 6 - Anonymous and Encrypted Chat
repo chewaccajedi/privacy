@@ -31,3 +31,11 @@ sessions, you will need to configure 'Pidgin' to store these credencials in the 
 portion of the thumb drive in the same way as you did with 'Thunderbird' for your email.
 
 You can find 'Tails' and its documentation at: https://tails.boum.org/
+
+In order to contact and chat with your buddy, you both will need to connect to an IRC or
+chat network. Not many of them are friendly to 'Tor', with many of them actually blocking
+or denying access via 'Tor'.
+
+You may find the latest known status of what services are available and how to connect
+to them from 'Tor' at: https://gitlab.torproject.org/legacy/trac/-/wikis/doc/BlockingIrc
+
