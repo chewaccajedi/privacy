@@ -22,8 +22,17 @@ tested the following:
 
 http://en.onionmail.info/ (this is the clearnet explanatory website, to set up an account you will need to
                            connect to any of their .onion servers using Tor).
+                           
+http://pflujznptk5lmuf6xwadfqy6nffykdvahfbljh7liljailjbxrgvhfid.onion/
+https://onionmail.org/    (this service is available via the clearnet and the darknet. It does not require
+                          you to provide any email or telephone number at sign-up.
+                          It provides both web email and POP3/SMTP).
 
-https://cock.li/          (a vulgarly named service, but it works for the purpose of being anonymous).
+http://rurcblzhmdk22kttfkel2zduhyu3r6to7knyc7wiorzrx5gw4c3lftad.onion/
+https://cock.li/          (a vulgarly named service, but it works for the purpose of being anonymous
+                          It provides both web email and POP3/SMTP.
+                          This service is available via the clearnet and the darknet.
+                          They now ask you for an invitation from another cock.li user to create an account).
 
 https://send-email.org/   (one-way email service, so you can send an email to anyone, but they cannot reply to
                            you)
